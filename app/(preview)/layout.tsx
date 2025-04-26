@@ -8,8 +8,8 @@ const geist = Geist({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://ai-sdk-preview-pdf-support.vercel.app"),
-  title: "PDF Support Preview",
-  description: "Experimental preview of PDF support with the AI SDK",
+  title: "AI-EXP PDF 測驗產生器",
+  description: "使用 AI-EXP 的 AI SDK 根據 PDF 內容生成互動測驗",
 };
 
 export default function RootLayout({
@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning className={`${geist.className}`}>
+    <html lang="zh-Hant" suppressHydrationWarning className={`${geist.className}`}>
       <body>
         <ThemeProvider attribute="class" enableSystem forcedTheme="dark">
           <Toaster position="top-center" richColors />
